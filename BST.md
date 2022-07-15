@@ -138,3 +138,7 @@ code `fzf`
 
 29. The difference between `class Portfolio extends Component {` and `class Portfolio extends Component() {` is quite big!
     If there is no need to invoke the function/ component , then don't do it. tabnine adds the paranthesis sometimes!
+
+## 15-07-22:
+
+30. Spent at least one hour figuring out how to sign in to GitHub with VSCode - essentially, nothing worked besides deleting the PAT, creating a new one, creating a repo and trying to push --> then instead of password, use the PAT.
