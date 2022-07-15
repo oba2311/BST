@@ -1,0 +1,140 @@
+## 9-09-21
+
+1. `liver-server` is really really bad when changing CSS UNLESS it is started from a directory rather than .html file.
+
+i.e. `~/something/something/ % live-server something/`
+
+2. In order to create a new project on git via CLI git CLI is needed -
+   `gh create repo ${name}` to create the remote via CLI.
+   Then add all and commit push.
+
+3. `Emmet` on nvim is used with a key combination rather than automatically.
+   i.e. `M-y then ,` in my case.
+
+4. `.tmux.config` will not load if the symlink is broken. Symlink should be created from the destination's folder i.e. `~% ln -s something/.dotfiles/.tmux.config .`
+
+5. When tmux dies unexpectedly often, it might help to delete the tmux folder form `/temp/` folder.
+
+6. A WAY better way to work with the command area of nvim is through `:ctrl f` which will open a nvim-like mini window to work on with the command area.
+
+## 10-09-21
+
+7. in css/html when the meta attribute fails to fill the screen with content in mobile, there is an option to use `min-width: fit-content` attribute.
+8. iterm2 and tmux integratio works really well, if started from iterm2.
+9. oh-my-zsh is needed for zsh plugins. a super important plugin is `autosuggestions`.
+10. Always remember to add `__dirname` to the relative path for `res.sendFile` in express.
+
+## 11+12-09-21
+
+11. When working with `flex` and `CSS` always make sure there are no trailing `<br>`s that mess up the spacing.
+12. ALWAYS check for html native tags before some other fancy stuff - e.g. `<input type='date'>` instead of a package.
+13. Better to work with `CDN` rather than `npm` for better preformance (caching).
+14. Put the JS `script`s at the bottom of the HTML to make sure UI loads before the packages.
+15. `Promises` work differently and cannot be accessed synchoronisly. `then` has to be used, for example when calling a fetch API.
+16. TBD Grid VS Flex.
+
+## 19-09-21
+
+17. in iterm2 when `option` key is defined as `meta` then `prefix C-b` which is in many cases a defualt would work out of the box.
+18. `cd` in `FZF` would work only as part of `FZF` in shell (or in my case .zsh) so if it is not installed in .zsh it won't work at all.
+
+## 20-09-21
+
+19. Use a `.zshrc` to add commit push in one line:
+
+```
+function lazygit() {
+    git add .
+    git commit -a -m "$*"
+    git push
+}
+```
+
+## 26-09-21
+
+20. Use `nvim -o \`fzf\` ` to edit a file found with fzf.
+21. For Emmet shortcuts define ',' as the lead so tapping twice on ',' triggers emmet.
+22. For commenting, use tcomment plug with `g+motion` or visual block mode with ctrl+v then add # to all lines (takes place only after typing ESC).
+
+```
+Explicit commenting/uncommenting:
+
+    g<{motion}   :: Uncomment region
+    g<c          :: Uncomment the current line
+    g<b          :: Uncomment the current region as block
+
+    g>{motion}   :: Comment region
+    g>c          :: Comment the current line
+    g>b          :: Comment the current region as block
+
+In visual mode:
+
+    gc           :: Toggle comments
+    g>           :: Comment selected text
+```
+
+## 03-10-21
+
+23. In Bash:
+
+```
+
+  main () {
+    if [ "$1" != "" ]; then
+        echo "One for $1, one for me."
+    else
+        echo "One for you, one for me."
+    fi
+  }
+  # call main with all of the positional arguments
+  main "$@"
+```
+
+- funcs don't need the argument passed to access it.
+- args are accessed: $1 - $N.
+- if ends with fi.
+
+## 11-10-21
+
+24. Pipe fzf results to any other bach command - rm for example:
+
+```
+fzf | xargs rm
+```
+
+25. In #REACT #JSX - to turn a boolean we can just assign it to the opposite:
+
+```
+chosenTask.isCompleted = !chosenTask.isCompleted;
+```
+
+## 12-10-21
+
+26. Pass `fzf` args to `mv`:
+    this will move whatever fzf finds to the example directory:
+
+```
+fzf |
+
+while read fname
+do
+mv $fname Desktop/example/dir/things.md
+done
+```
+
+## 18-10-21
+
+27. Pass `fzf` args to `code` to open in VSCode:
+
+```
+code `fzf`
+```
+
+28. When coping a react project, we gotta do the `npm install` to get all the dependencies up and installed,
+    and npm would know where to look for those if there exist a `package.json` file and the install is executed form
+    the project's folder.
+
+## 20-10-21:
+
+29. The difference between `class Portfolio extends Component {` and `class Portfolio extends Component() {` is quite big!
+    If there is no need to invoke the function/ component , then don't do it. tabnine adds the paranthesis sometimes!
