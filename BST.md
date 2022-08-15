@@ -148,3 +148,13 @@ code `fzf`
 31. For some time the page wasn't interactive , JS wouldn't work / breaks since it was trying to get DOM elements before the DOM loads.
 
 The solution for this is either to add the `defer` attribute to the script tag or to put the script tag at the bottom of the HTML so it renders after the DOM loads.
+
+## 13-08-22:
+
+32. some `npm` packages work with `require(package)` and some only with `import package from 'package'`.)
+
+33. `NODE` tip: in order to automatically refresh a node app , install and run the `nodemon` package.
+
+## 15-08-22:
+
+34. To test an API, install the Thunder Client Extension in VScode and configure parameters, API key, and headers.
