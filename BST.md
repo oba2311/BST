@@ -158,3 +158,33 @@ The solution for this is either to add the `defer` attribute to the script tag o
 ## 15-08-22:
 
 34. To test an API, install the Thunder Client Extension in VScode and configure parameters, API key, and headers.
+
+## 19-08-22:
+
+35. Start the project from setting up Express, so `npm init -y` and then typescript `yarn add typescript -D` - `-D` is for devDependencies so it is only available during the build time and locally.
+
+36. When using express or other packages with TS, we need to install `yarn add @types/express` or generally: `yarn add @types/packageName` to get the type definitions.
+
+37. Setting up MongoDB: setting up Mongodb Atlas: get connection string and store it in `.env` file. This is safer than storing it in the code.
+
+38. When creating an endpoint, we can use it to test the DB connection with POST. For this we need to create a schema and a model. The schema is the structure of the data and the model is the way we interact with the data. For this we need to use the libraries `mongoose` and `dotenv`. doteenv is used to read the `.env` file.
+
+    ```
+    const dotenv = require('dotenv');
+    dotenv.config();
+    ```
+
+## 23-08-22:
+
+39. Notice that `require` is outdated and should be replaced with `import`. For eaxample:
+
+```
+import { Router } from 'express';
+const router = Router();
+```
+
+40. When interacting with MongoDB, use the VScode extension `MongoDB Explorer` to see the data.
+
+41. Remember that tutorials could be outdated, for example, `retult.ops` is not a thing anymore with mongodb, for the `insertOne` method.
+
+42.
