@@ -187,4 +187,25 @@ const router = Router();
 
 41. Remember that tutorials could be outdated, for example, `retult.ops` is not a thing anymore with mongodb, for the `insertOne` method.
 
-42.
+42. Use this script to automatically update a cell in google sheets with the last edited time:
+
+```
+    function onEdit() {
+    var s = SpreadsheetApp.getActiveSheet();
+    if( s.getName() == "2022Q3" ) { //checks that we're on the correct sheet
+    var r = s.getActiveCell();
+    console.log(r.getColumn())
+    if( r.getColumn() == 11 ) { //checks the column
+    var nextCell = r.offset(0, 1);
+    if( nextCell.getValue() === '' ) //is empty?
+    var formattedDate = Utilities.formatDate(new Date(), "GMT+0", 'E MM/dd/yyyy');
+    nextCell.setValue(formattedDate);
+            };
+        };
+    }
+
+```
+
+```
+
+```
