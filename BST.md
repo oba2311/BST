@@ -201,6 +201,31 @@ function onEdit() {
 
 ```
 
+## 08-10-22:
+
+40. Everything I learned today about REACT from Scrimba:
+
+- React is composable - components can be children of each other. See:
+  ![figure](https://i.ibb.co/J2x0ycd/image.png)
+
+- React is declarative - we don't tell the browser how to do something, we tell it what to do.
+- React is component based - we can create components and reuse them.
+
+- JSX turns JS functions into React elements. It is a specific syntax for this purpose.
+
+- Componenets can be bundled using fragments. Fragments are like empty divs that don't show up in the DOM.
+
+- Components are named with PascalCase. They are functions that return JSX. We use the following line to render components: `ReactDOM.render(<Component />, document.getElementById('root'));`
+
+- Vite is a bundler that is faster than webpack. It is used to bundle the code and make it ready for production. It comes of the shelf with npm and can be installed with `npm init vite@latest`. It is a zero config bundler.
+
+- To start a project quickly, use vite as follows: `npm init vite@latest my-vite-app -- --template react` or just `npm init vite@latest` and then `npm install` and `npm run dev`.
+
+## 12-04-23:
+
+41. Create a global .gitignore and assign it to all projects automatically:
 ```
+echo .DS_Store >> ~/.gitignore_global #this will add .DS_Store to the global gitignore 
+git config --global core.excludesfile ~/.gitignore_global #this will store the gitignore_global in the root folder and add it to all future projects
 
 ```
