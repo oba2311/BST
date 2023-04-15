@@ -1,7 +1,23 @@
-# BloodSweatTears
+# BloodSwehtTears
+### 15-04-23
+1. To search across the codebase with amazing preview:
+`Telescope live_grep` 
 
+2. Find and replace by pattern:
+`:%s/<search phrase>/<replace phrase>/options` the `%` sign forces the replace on the entire file.
 
-## 9-09-21
+### 13-04-23
+
+The fast and secure way to find which `.vimrc` or `init.vim` filr is used is by running:
+`
+:echo $MYVIMRC
+`
+Details: 
+https://stackoverflow.com/questions/8977649/how-to-locate-the-vimrc-file-used-by-vim
+
+==========
+
+### 9-09-21
 
 1. `liver-server` is really really bad when changing CSS UNLESS it is started from a directory rather than .html file.
 
@@ -20,14 +36,14 @@ i.e. `~/something/something/ % live-server something/`
 
 6. A WAY better way to work with the command area of nvim is through `:ctrl f` which will open a nvim-like mini window to work on with the command area.
 
-## 10-09-21
+### 10-09-21
 
 7. in css/html when the meta attribute fails to fill the screen with content in mobile, there is an option to use `min-width: fit-content` attribute.
 8. iterm2 and tmux integratio works really well, if started from iterm2.
 9. oh-my-zsh is needed for zsh plugins. a super important plugin is `autosuggestions`.
 10. Always remember to add `__dirname` to the relative path for `res.sendFile` in express.
 
-## 11+12-09-21
+### 11+12-09-21
 
 11. When working with `flex` and `CSS` always make sure there are no trailing `<br>`s that mess up the spacing.
 12. ALWAYS check for html native tags before some other fancy stuff - e.g. `<input type='date'>` instead of a package.
@@ -36,12 +52,12 @@ i.e. `~/something/something/ % live-server something/`
 15. `Promises` work differently and cannot be accessed synchoronisly. `then` has to be used, for example when calling a fetch API.
 16. TBD Grid VS Flex.
 
-## 19-09-21
+### 19-09-21
 
 17. in iterm2 when `option` key is defined as `meta` then `prefix C-b` which is in many cases a defualt would work out of the box.
 18. `cd` in `FZF` would work only as part of `FZF` in shell (or in my case .zsh) so if it is not installed in .zsh it won't work at all.
 
-## 20-09-21
+### 20-09-21
 
 19. Use a `.zshrc` to add commit push in one line:
 
@@ -53,7 +69,7 @@ function lazygit() {
 }
 ```
 
-## 26-09-21
+### 26-09-21
 
 20. Use `nvim -o \`fzf\` ` to edit a file found with fzf.
 21. For Emmet shortcuts define ',' as the lead so tapping twice on ',' triggers emmet.
@@ -76,7 +92,7 @@ In visual mode:
     g>           :: Comment selected text
 ```
 
-## 03-10-21
+### 03-10-21
 
 23. In Bash:
 
@@ -97,7 +113,7 @@ In visual mode:
 - args are accessed: $1 - $N.
 - if ends with fi.
 
-## 11-10-21
+### 11-10-21
 
 24. Pipe fzf results to any other bach command - rm for example:
 
@@ -111,7 +127,7 @@ fzf | xargs rm
 chosenTask.isCompleted = !chosenTask.isCompleted;
 ```
 
-## 12-10-21
+### 12-10-21
 
 26. Pass `fzf` args to `mv`:
     this will move whatever fzf finds to the example directory:
@@ -125,7 +141,7 @@ mv $fname Desktop/example/dir/things.md
 done
 ```
 
-## 18-10-21
+### 18-10-21
 
 27. Pass `fzf` args to `code` to open in VSCode:
 
@@ -137,32 +153,32 @@ code `fzf`
     and npm would know where to look for those if there exist a `package.json` file and the install is executed form
     the project's folder.
 
-## 20-10-21:
+### 20-10-21:
 
 29. The difference between `class Portfolio extends Component {` and `class Portfolio extends Component() {` is quite big!
     If there is no need to invoke the function/ component , then don't do it. tabnine adds the paranthesis sometimes!
 
-## 15-07-22:
+### 15-07-22:
 
 30. Spent at least one hour figuring out how to sign in to GitHub with VSCode - essentially, nothing worked besides deleting the PAT, creating a new one, creating a repo and trying to push --> then instead of password, use the PAT.
 
-## 17-07-22:
+### 17-07-22:
 
 31. For some time the page wasn't interactive , JS wouldn't work / breaks since it was trying to get DOM elements before the DOM loads.
 
 The solution for this is either to add the `defer` attribute to the script tag or to put the script tag at the bottom of the HTML so it renders after the DOM loads.
 
-## 13-08-22:
+### 13-08-22:
 
 32. some `npm` packages work with `require(package)` and some only with `import package from 'package'`.)
 
 33. `NODE` tip: in order to automatically refresh a node app , install and run the `nodemon` package.
 
-## 15-08-22:
+### 15-08-22:
 
 34. To test an API, install the Thunder Client Extension in VScode and configure parameters, API key, and headers.
 
-## 19-08-22:
+### 19-08-22:
 
 35. Start the project from setting up Express, so `npm init -y` and then typescript `yarn add typescript -D` - `-D` is for devDependencies so it is only available during the build time and locally.
 
@@ -177,7 +193,7 @@ The solution for this is either to add the `defer` attribute to the script tag o
     dotenv.config();
     ```
 
-## 23-08-22:
+### 23-08-22:
 
 39. Notice that `require` is outdated and should be replaced with `import`. For eaxample:
 
@@ -204,7 +220,7 @@ function onEdit() {
 
 ```
 
-## 08-10-22:
+### 08-10-22:
 
 40. Everything I learned today about REACT from Scrimba:
 
@@ -224,7 +240,7 @@ function onEdit() {
 
 - To start a project quickly, use vite as follows: `npm init vite@latest my-vite-app -- --template react` or just `npm init vite@latest` and then `npm install` and `npm run dev`.
 
-## 12-04-23:
+### 12-04-23:
 
 41. Create a global .gitignore and assign it to all projects automatically:
 ```
