@@ -1,10 +1,11 @@
-# BloodSwehtTears
+# BloodSweatTears
 ### 15-04-23
 1. To search across the codebase with amazing preview:
 `Telescope live_grep` 
 
 2. Find and replace by pattern:
-`:%s/<search phrase>/<replace phrase>/options` the `%` sign forces the replace on the entire file.
+`:%s/<search phrase>/<replace phrase>/options` 
+where the `%` symbol applies to all occurrences in the file (can use without for first only).
 
 ### 13-04-23
 
