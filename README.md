@@ -1,4 +1,17 @@
 # BloodSweatTears
+
+### 19-05-23
+1. The mapping definitions for iterm2 and NVChad get mixed and this is a nightmare
+for alt specifically, defined as <M> or <A> in mapping settings.
+    The only way to make it work right is to define it in iterm2 settings as the default (which is +esc for option key).
+
+
+### 17-04-23
+1. Set up copilot on NVChad is a nightmare:
+    1. Has to update in `init.lua`, plugins and custom.
+    2. Then has to sync NVChad through the NVdashboard.
+    3. Then needs to set lazyload to false for it to work for some reason.
+
 ### 15-04-23
 1. To search across the codebase with amazing preview:
 `Telescope live_grep` 
