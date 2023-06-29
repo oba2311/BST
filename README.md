@@ -271,7 +271,7 @@ for alt specifically, defined as <M> or <A> in mapping settings.
     The only way to make it work right is to define it in iterm2 settings as the default (which is +esc for option key)..
 
 
-### 29-06-06-23
+### 29-06-23
 1. Packer is the package manager I'm using and I always forget.
 2. To jump a full paragraph `}` and `{` is very handy.
-3. The very helpful status line I'm using is called Airline.
+. The very helpful status line I'm using is called Airline.
