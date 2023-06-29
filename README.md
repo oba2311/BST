@@ -1,35 +1,8 @@
+Tue May 23 01:57:42 WITA 2023
+
 # BloodSweatTears
 
-### 19-05-23
-1. The mapping definitions for iterm2 and NVChad get mixed and this is a nightmare
-for alt specifically, defined as <M> or <A> in mapping settings.
-    The only way to make it work right is to define it in iterm2 settings as the default (which is +esc for option key).
-
-
-### 17-04-23
-1. Set up copilot on NVChad is a nightmare:
-    1. Has to update in `init.lua`, plugins and custom.
-    2. Then has to sync NVChad through the NVdashboard.
-    3. Then needs to set lazyload to false for it to work for some reason.
-
-### 15-04-23
-1. To search across the codebase with amazing preview:
-`Telescope live_grep` 
-
-2. Find and replace by pattern:
-`:%s/<search phrase>/<replace phrase>/options` 
-where the `%` symbol applies to all occurrences in the file (can use without for first only).
-
-### 13-04-23
-
-The fast and secure way to find which `.vimrc` or `init.vim` filr is used is by running:
-`
-:echo $MYVIMRC
-`
-Details: 
-https://stackoverflow.com/questions/8977649/how-to-locate-the-vimrc-file-used-by-vim
-
-==========
+ADD TO THE BOTTOM, NOT HERE!
 
 ### 9-09-21
 
@@ -262,3 +235,43 @@ echo .DS_Store >> ~/.gitignore_global #this will add .DS_Store to the global git
 git config --global core.excludesfile ~/.gitignore_global #this will store the gitignore_global in the root folder and add it to all future projects
 
 ```
+
+
+### 13-04-23
+
+The fast and secure way to find which `.vimrc` or `init.vim` filr is used is by running:
+`
+:echo $MYVIMRC
+`
+Details: 
+https://stackoverflow.com/questions/8977649/how-to-locate-the-vimrc-file-used-by-vim
+
+
+
+### 15-04-23
+1. To search across the codebase with amazing preview:
+`Telescope live_grep` 
+
+2. Find and replace by pattern:
+`:%s/<search phrase>/<replace phrase>/options` 
+where the `%` symbol applies to all occurrences in the file (can use without for first only).
+
+
+### 17-04-23
+1. Set up copilot on NVChad is a nightmare:
+    1. Has to update in `init.lua`, plugins and custom. BTW `init.lua` is at `.config/nvim/init.lua`
+    2. Then has to sync NVChad through the NVdashboard.
+    3. Then needs to set lazyload to false for it to work for some reason.
+
+
+
+### 19-05-23
+1. The mapping definitions for iterm2 and NVChad get mixed and this is a nightmare
+for alt specifically, defined as <M> or <A> in mapping settings.
+    The only way to make it work right is to define it in iterm2 settings as the default (which is +esc for option key)..
+
+
+### 29-06-06-23
+1. Packer is the package manager I'm using and I always forget.
+2. To jump a full paragraph `}` and `{` is very handy.
+3. The very helpful status line I'm using is called Airline.
