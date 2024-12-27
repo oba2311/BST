@@ -282,6 +282,6 @@ https://stackoverflow.com/questions/8977649/how-to-locate-the-vimrc-file-used-by
 - install dependencies with `pip install` inside that env.
 
 ### 27-12-24
-- ![Static Badge](https://img.shields.io/badge/typescript)  1. Undefined is better than null or an empty string:
+- 1. Undefined is better than null or an empty string:
     1. Optional type is defaulted to undefined in typescript.
-    ![how to fallback to undefined](/Users/obamain/Library/CloudStorage/GoogleDrive-oba2311@gmail.com/My\ Drive/1CONTENT/4GDrive-Screenshots/CleanShot\ 2024-12-27\ at\ 14.53.35@2x.jpg)
+    ![how to fallback to undefined](./assets/2.jpg)
