@@ -284,4 +284,23 @@ https://stackoverflow.com/questions/8977649/how-to-locate-the-vimrc-file-used-by
 ### 27-12-24
 - 1. Undefined is better than null or an empty string:
     1. Optional type is defaulted to undefined in typescript.
-    ![how to fallback to undefined](./assets/2.jpg)
+   ![how to fallback to undefined](../assets/2.jpg
+
+
+### 28-12-24
+
+- [vim] move screen up and down: zz , zt, z
+
+
+
+### 01-01-25
+
+- [vim] to surround a line with an HTML tag:
+```
+VSt<tag>
+```
+<pre>
+V- visual mode to select the line
+S- surround full sentence
+t- for tag
+</pre>
